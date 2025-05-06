@@ -1,0 +1,26 @@
+/* styles.css */
+
+/* Style global */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-background-color: #F9FAFB;
+}
+
+/* Barre du haut */
+.top-form {
+    -fx-padding: 10;
+    -fx-background-color: #E5E7EB;
+    -fx-border-color: #D1D5DB;
+    -fx-border-width: 0 0 2 0;
+}
+
+/* Les boutons */
+.button {
+    -fx-background-color: #6366F1; /* Indigo */
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 3, 0, 1, 1);
+}
+.button:hover {
+    -fx-background-color: #4F46E5;
+}

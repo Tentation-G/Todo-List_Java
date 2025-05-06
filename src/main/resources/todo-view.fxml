@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.todo.ToDoController"
+            prefWidth="800" prefHeight="400">
+
+    <!-- TOP: Formulaire d'ajout -->
+    <top>
+        <HBox spacing="10" alignment="CENTER" styleClass="top-form">
+            <TextField fx:id="titleField" promptText="Titre" />
+            <DatePicker fx:id="dueDatePicker" promptText="Échéance" />
+            <TextArea fx:id="descriptionArea" promptText="Description" prefRowCount="1" prefHeight="40" />
+            <Button text="Ajouter" onAction="#addTask" prefWidth="100"/>
+        </HBox>
+    </top>
+
+    <!-- CENTER: TableView des tâches -->
+    <center>
+        <TableView fx:id="taskTable" prefWidth="600">
+            <columns>
+
+                <!-- Colonne case à cocher (completed) -->
+                <TableColumn fx:id="completedCol" text="✔" prefWidth="50" />
+
+                <!-- Colonne Titre -->
+                <TableColumn fx:id="titleCol" text="Titre" prefWidth="150" />
+
+                <!-- Colonne Description -->
+                <TableColumn fx:id="descCol" text="Description" prefWidth="200" />
+
+                <!-- Colonne DueDate -->
+                <TableColumn fx:id="dueDateCol" text="Échéance" prefWidth="100" />
+
+                <!-- Colonne Action -->
+                <TableColumn fx:id="actionCol" text="Action" prefWidth="100" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
