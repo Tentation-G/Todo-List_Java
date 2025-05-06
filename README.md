@@ -2,6 +2,12 @@
 Une application de gestion de tâches développée en Java 21, JavaFX, et SQLite.
 Elle permet d’ajouter, afficher, compléter et supprimer des tâches.
 
+🛠️ Prérequis
+- Java 21 ou version compatible
+- JavaFX (via SDK ou module intégré à l’IDE)
+- Un IDE comme IntelliJ IDEA ou Eclipse
+- Gradle/Maven (facultatif, pour la gestion de dépendances)
+
 🧾 Fonctionnalités
 - 📌 Ajouter une tâche avec titre, date d’échéance, et description
 - 🟩 Marquer une tâche comme complétée
@@ -9,12 +15,6 @@ Elle permet d’ajouter, afficher, compléter et supprimer des tâches.
 - 📋 Affichage dans une TableView avec colonne de statut et bouton d’action
 - 📅 Mise en évidence des dates dépassées
 - 💾 Sauvegarde automatique dans une base SQLite
-
-🛠️ Prérequis
-- Java 21 ou version compatible
-- JavaFX (via SDK ou module intégré à l’IDE)
-- Un IDE comme IntelliJ IDEA ou Eclipse
-- Gradle/Maven (facultatif, pour la gestion de dépendances)
 
 📁 Structure du projet
 ```
