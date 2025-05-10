@@ -7,7 +7,7 @@ import java.util.List;
 public class TaskService {
 
     /**
-     * Ajoute une nouvelle tâche en BD.
+     * Ajout tache(s).
      */
     public static void addTask(String title, String dueDate, String description) {
         String sql = "INSERT INTO tasks (title, dueDate, description) VALUES (?, ?, ?)";
@@ -25,7 +25,7 @@ public class TaskService {
     }
 
     /**
-     * Retourne toutes les tâches (ordre décroissant par id).
+     * Return les taches en bdd par ordre d'id.
      */
     public static List<Task> getAllTasks() {
         List<Task> tasks = new ArrayList<>();
@@ -51,7 +51,7 @@ public class TaskService {
     }
 
     /**
-     * Supprime une tâche par son id.
+     * Supp une tache pas son id.
      */
     public static void deleteTask(int id) {
         String sql = "DELETE FROM tasks WHERE id = ?";
@@ -67,7 +67,7 @@ public class TaskService {
     }
 
     /**
-     * Met à jour le champ completed pour la tâche id.
+     * Maj du change complete par son id.
      */
     public static void updateTaskCompletion(int id, boolean completed) {
         String sql = "UPDATE tasks SET completed = ? WHERE id = ?";

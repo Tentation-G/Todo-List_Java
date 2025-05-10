@@ -90,7 +90,7 @@ public class ToDoController {
             private final Button deleteBtn = new Button("Supprimer");
 
             {
-                // Largeur bouton pour éviter l'ellipse "..."
+                // Largeur btnn pour éviter l'ellipse "..."
                 deleteBtn.setMinWidth(80);
                 deleteBtn.setOnAction(e -> {
                     Task task = getTableView().getItems().get(getIndex());
@@ -116,7 +116,7 @@ public class ToDoController {
     }
 
     /**
-     * Ajoute une tâche via le formulaire.
+     * ajout de tache via form.
      */
     @FXML
     private void addTask() {
@@ -142,7 +142,7 @@ public class ToDoController {
     }
 
     /**
-     * Recharge la table depuis la DB.
+     * Recharge table depuis bdd.
      */
     private void loadTasks() {
         taskList.setAll(TaskService.getAllTasks());

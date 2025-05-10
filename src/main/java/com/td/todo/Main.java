@@ -8,14 +8,14 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        // Initialise la base de données
+        // Init bdd
         DatabaseManager.initializeDatabase();
 
-        // Charge le FXML
+        // charge le FXML
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/todo-view.fxml"));
         Scene scene = new Scene(loader.load(), 800, 400);
 
-        // Ajout de la feuille de style
+        // Ajout css
         scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
 
         stage.setTitle("To-Do List Améliorée");

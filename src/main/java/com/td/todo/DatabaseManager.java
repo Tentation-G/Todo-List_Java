@@ -6,14 +6,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- * Gère la connexion à la base SQLite
- * et l'initialisation de la table `tasks`.
+ * Page connexion bdd
+ * et init si non exist de la table
  */
 public class DatabaseManager {
     private static final String URL = "jdbc:sqlite:tasks.db";
 
     /**
-     * @return une Connection à la base de données SQLite
+     * @return une connexion a la bdd
      */
     public static Connection connect() {
         try {
@@ -24,7 +24,7 @@ public class DatabaseManager {
     }
 
     /**
-     * Initialise la table `tasks` si elle n'existe pas déjà.
+     * Init la bdd si non exist
      */
     public static void initializeDatabase() {
         String sql = """

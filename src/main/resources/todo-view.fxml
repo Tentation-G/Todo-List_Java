@@ -20,7 +20,7 @@
         <TableView fx:id="taskTable" prefWidth="600">
             <columns>
 
-                <!-- Colonne case à cocher (completed) -->
+                <!-- Colonne case à cocher -->
                 <TableColumn fx:id="completedCol" text="✔" prefWidth="50" />
 
                 <!-- Colonne Titre -->
