@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.td.todo;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -18,7 +18,7 @@ public class Main extends Application {
         // Ajout css
         scene.getStylesheets().add(getClass().getResource("/styles.css").toExternalForm());
 
-        stage.setTitle("To-Do List Améliorée");
+        stage.setTitle("To-Do List ZenTask Solution");
         stage.setScene(scene);
         stage.show();
     }

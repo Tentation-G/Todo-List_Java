@@ -1,4 +1,4 @@
-package com.example.todo;
+package com.td.todo;
 
 public class Task {
     private int id;

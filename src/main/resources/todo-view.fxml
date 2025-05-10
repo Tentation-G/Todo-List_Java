@@ -2,7 +2,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <BorderPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.todo.ToDoController"
+            fx:controller="com.td.todo.ToDoController"
             prefWidth="800" prefHeight="400">
 
     <!-- TOP: Formulaire d'ajout -->
