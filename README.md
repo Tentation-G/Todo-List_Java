@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS tasks (
    
     ```
     
-    git clone https://github.com/ton-utilisateur/todo-javafx.git
+    git clone https://github.com/Tentation-G/todo-javafx.git
     cd todo-javafx
     
     ```
