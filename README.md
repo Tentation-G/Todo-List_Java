@@ -33,15 +33,15 @@ Elle permet d’ajouter, afficher, compléter et supprimer des tâches.
 
 src/
 ├── com.example.todo/
-│   ├── Main.java                → Point d’entrée JavaFX
-│   ├── DatabaseManager.java     → Gestion de la base SQLite
-│   ├── Task.java                → Modèle de tâche
-│   ├── TaskService.java         → Accès aux données (CRUD)
-│   ├── ToDoController.java      → Logique de l’interface utilisateur
-│   └── styles.css               → Feuille de style JavaFX
+│   ├── Main.java
+│   ├── DatabaseManager.java
+│   ├── Task.java
+│   ├── TaskService.java
+│   ├── ToDoController.java
+│   └── styles.css
 ├── resources/
-│   └── todo-view.fxml           → Fichier FXML de l’interface
-└── module-info.java             → Déclaration des modules Java
+│   └── todo-view.fxml
+└── module-info.java
 
 ```
 
